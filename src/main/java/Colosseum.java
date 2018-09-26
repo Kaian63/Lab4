@@ -99,7 +99,7 @@ public class Colosseum {
             attackLevel = myScan.nextInt();
         }
         System.out.println();
-        System.out.print("What is your defense level " + (MAX_HIT_POINTS - attackLevel) + ": ");
+        System.out.print("What is your defense level (1-" + (MAX_HIT_POINTS - attackLevel) + "): ");
         int defenseLevel = myScan.nextInt();
         while (defenseLevel < 1 || defenseLevel > MAX_HIT_POINTS - attackLevel) {
             System.out.print("Sorry the defefnse level must be between 1 and " + (MAX_HIT_POINTS - attackLevel) + ": ");
